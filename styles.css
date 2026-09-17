@@ -53,11 +53,15 @@ a { color: var(--link); }
   padding-bottom: 12px;
 }
 .brand {
+  display: inline-flex;
+  align-items: center;
   color: var(--accent);
-  font-weight: 900;
-  font-size: 22px;
-  letter-spacing: -0.02em;
   text-decoration: none;
+}
+.brand svg {
+  display: block;
+  height: 26px;
+  width: auto;
 }
 .site-header nav { display: flex; flex-wrap: wrap; gap: 4px 14px; }
 .site-header nav a {

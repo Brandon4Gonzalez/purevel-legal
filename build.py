@@ -39,6 +39,14 @@ SOURCE = (
 )
 OUT = Path(__file__).resolve().parent
 
+# El "purevel" del encabezado, con la tipografía del hero de la app (Britney
+# Ultra). Va como contornos en SVG y no como @font-face: la licencia ITF de
+# Fontshare pide permiso escrito para alojar la fuente en un servidor propio, y
+# cargarla de su API le pasaría la IP de cada visitante a un tercero. Se genera
+# desde assets/fonts/Britney-Ultra.otf de la app con el mismo tracking (-0.025em).
+# `fill="currentColor"`: toma el color de `.brand`, así que respeta el modo oscuro.
+WORDMARK = (OUT / "wordmark.svg").read_text(encoding="utf-8").strip()
+
 # (carpeta, inicio, fin, rótulo del menú, descripción para buscadores)
 PAGES = [
     (
@@ -177,7 +185,7 @@ def page(title: str, description: str, body: str, current: str | None, prefix: s
 <body>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="{prefix}">purevel</a>
+      <a class="brand" href="{prefix}">{WORDMARK}</a>
       <nav aria-label="Documentos">
         {nav(current, prefix)}
       </nav>
