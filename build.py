@@ -235,7 +235,7 @@ def main() -> None:
     </div>
     <p>En Purevel publicas fotos, videos y looks; creas <strong>battles</strong> para que otras personas voten entre dos opciones de outfit; sigues a quienes te inspiran y comentas su contenido. Purevel es solo para mayores de 18 años.</p>
     <h2>Iniciar sesión con Google</h2>
-    <p>Puedes crear tu cuenta con tu correo o con tu cuenta de Google, Apple o X. Si usas Google, Purevel solo recibe tu <strong>nombre, correo e identificador de tu cuenta</strong>, y los usa para crear tu cuenta e identificarte cuando vuelves a entrar. No accedemos a tu Gmail, tus contactos ni a ningún otro dato de tu cuenta de Google. Lo explicamos en detalle en la <a href="privacidad/">Política de privacidad</a>.</p>
+    <p>Puedes crear tu cuenta con tu correo o con tu cuenta de Google o Apple. Si usas Google, Purevel solo recibe tu <strong>nombre, correo e identificador de tu cuenta</strong>, y los usa para crear tu cuenta e identificarte cuando vuelves a entrar. No accedemos a tu Gmail, tus contactos ni a ningún otro dato de tu cuenta de Google. Lo explicamos en detalle en la <a href="privacidad/">Política de privacidad</a>.</p>
     <h2>Documentos</h2>
     <p>Las reglas de uso, cómo tratamos tus datos, la ayuda y cómo eliminar tu cuenta.</p>
     <ul class="cards">
