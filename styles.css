@@ -1,25 +1,14 @@
 :root {
-  --bg: #ffffff;
-  --surface: #faf7f2;
-  --text: #1a1a1a;
-  --muted: #5f5a53;
-  --border: #e7e1d8;
-  --accent: #c4071a;
+  /* Siempre oscuro: la marca se ve sobre negro, igual que la app. */
+  color-scheme: dark;
+  --bg: #000000;
+  --surface: #141312;
+  --text: #ece8e2;
+  --muted: #a39d94;
+  --border: #2a2724;
+  --accent: #ff4d5e;
   --gold: #df9e25;
-  --link: #a8061a;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0f0f10;
-    --surface: #1a1918;
-    --text: #ece8e2;
-    --muted: #a39d94;
-    --border: #2e2b28;
-    --accent: #ff4d5e;
-    --gold: #f0b54a;
-    --link: #ff7a86;
-  }
+  --link: #f0b54a;
 }
 
 * { box-sizing: border-box; }
