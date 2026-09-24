@@ -1,11 +1,15 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.purevel.app",
       "sha256_cert_fingerprints": [
-        "4F:10:03:14:35:FB:B3:F7:7F:77:33:D3:1C:EC:75:23:07:4B:B8:1F:13:20:60:82:F3:28:EE:F9:58:1D:8B:72"
+        "4F:10:03:14:35:FB:B3:F7:7F:77:33:D3:1C:EC:75:23:07:4B:B8:1F:13:20:60:82:F3:28:EE:F9:58:1D:8B:72",
+        "73:94:94:99:B7:1D:0C:FE:3B:ED:CD:ED:62:DA:E7:24:AE:E9:F5:5E:B5:FD:6F:1B:12:1D:D1:D5:0C:E6:DF:C7",
+        "A9:A5:98:12:9D:B2:6E:6E:0E:AB:FB:F7:59:69:29:9A:7F:45:7D:56:FB:34:1C:9A:11:20:1E:8E:C7:47:6E:18"
       ]
     }
   }
