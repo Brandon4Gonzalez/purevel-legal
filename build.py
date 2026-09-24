@@ -223,13 +223,32 @@ def main() -> None:
         f'      <li><a href="{slug}/"><strong>{label}</strong><span>{html.escape(desc)}</span></a></li>'
         for slug, _, _, label, desc in PAGES
     )
-    index = f"""<h1>Documentos de Purevel</h1>
+    # La portada es también la "página de inicio" que Google revisa para la
+    # verificación de marca del login con Google: tiene que decir qué es la app
+    # y qué datos toma de Google, no solo listar documentos.
+    index = f"""<div class="hero">
+      <img src="logo.png" width="96" height="96" alt="Logo de Purevel">
+      <div>
+        <h1>Purevel</h1>
+        <p class="tagline">La red social de moda donde compartes tus looks y la comunidad te ayuda a decidir.</p>
+      </div>
+    </div>
+    <p>En Purevel publicas fotos, videos y looks; creas <strong>battles</strong> para que otras personas voten entre dos opciones de outfit; sigues a quienes te inspiran y comentas su contenido. Purevel es solo para mayores de 18 años.</p>
+    <h2>Iniciar sesión con Google</h2>
+    <p>Puedes crear tu cuenta con tu correo o con tu cuenta de Google, Apple o X. Si usas Google, Purevel solo recibe tu <strong>nombre, correo e identificador de tu cuenta</strong>, y los usa para crear tu cuenta e identificarte cuando vuelves a entrar. No accedemos a tu Gmail, tus contactos ni a ningún otro dato de tu cuenta de Google. Lo explicamos en detalle en la <a href="privacidad/">Política de privacidad</a>.</p>
+    <h2>Documentos</h2>
     <p>Las reglas de uso, cómo tratamos tus datos, la ayuda y cómo eliminar tu cuenta.</p>
     <ul class="cards">
 {cards}
     </ul>"""
     (OUT / "index.html").write_text(
-        page("Documentos", "Términos, privacidad y ayuda de Purevel.", index, None, ""),
+        page(
+            "Purevel",
+            "Purevel: la red social de moda donde compartes tus looks y la comunidad te ayuda a decidir.",
+            index,
+            None,
+            "",
+        ),
         encoding="utf-8",
     )
     print("  index.html")
