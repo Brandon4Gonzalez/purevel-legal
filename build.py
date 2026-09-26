@@ -179,8 +179,8 @@ def page(title: str, description: str, body: str, current: str | None, prefix: s
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{html.escape(title)} · Purevel</title>
   <meta name="description" content="{html.escape(description)}">
-  <link rel="icon" href="{prefix}favicon.png">
-  <link rel="stylesheet" href="{prefix}styles.css">
+  <link rel="icon" href="{prefix}favicon.png?v=2">
+  <link rel="stylesheet" href="{prefix}styles.css?v=2">
 </head>
 <body>
   <header class="site-header">
