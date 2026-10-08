@@ -11,6 +11,7 @@ Qué se publica:
     registro de la app.
   - Documento 3 (Centro de ayuda).
   - Documento 4 (Eliminar cuenta).
+  - Documento 5 (Estándares de seguridad infantil).
 
 Qué NO se publica: los callouts de Obsidian (`> [!question]`, `> [!info]`…),
 que son notas de trabajo. La única excepción son los "Resumen en lenguaje
@@ -73,9 +74,16 @@ PAGES = [
     (
         "eliminar-cuenta",
         "# DOCUMENTO 4",
-        "## Checklist de publicación",
+        "# DOCUMENTO 5",
         "Eliminar cuenta",
         "Cómo eliminar tu cuenta de Purevel y qué pasa con tus datos.",
+    ),
+    (
+        "seguridad-infantil",
+        "# DOCUMENTO 5",
+        "## Checklist de publicación",
+        "Seguridad infantil",
+        "Estándares de Purevel contra el abuso y la explotación sexual infantil (CSAE).",
     ),
 ]
 
